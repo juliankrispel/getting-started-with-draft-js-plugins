@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
+import createEmojiPlugin from 'draft-js-emoji-plugin';
+import 'draft-js-emoji-plugin/lib/plugin.css'
+
+const emojiPlugin = createEmojiPlugin();
+
+const { EmojiSuggestions } = emojiPlugin;
 
 class App extends Component {
   constructor(props) {
@@ -18,10 +24,14 @@ class App extends Component {
 
   render() {
     return (
-      <Editor
-        editorState={this.state.editorState}
-        onChange={this.onChange}
-      />
+      <div>
+        <Editor
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          plugins={[emojiPlugin]}
+        />
+        <EmojiSuggestions />
+      </div>
     );
   }
 }

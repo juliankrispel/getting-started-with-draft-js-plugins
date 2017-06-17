@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "draft-js-plugins-editor": "^2.0.0-beta1",
+    "draft-js": "^0.10.1",
+    "draft-js-emoji-plugin": "2.0.0-rc2",
+    "draft-js-plugins-editor": "2.0.0-rc2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
