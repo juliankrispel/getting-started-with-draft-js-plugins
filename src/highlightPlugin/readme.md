@@ -2,7 +2,7 @@
 
 A simple draft-js plugin to highlight text, created as part of writing a [tutorial on how to get started with draft-js-plugins](reactrocket.com/post/getting-started-with-draft-js-plugins/). This plugin is compatible with draft-js-plugins.
 
-![Draft-js highlight plugin](draft-js-plugins-purple-highlight.gif)
+![Draft-js highlight plugin](/getting-started-with-draft-js-plugins/blob/master/src/highlightPlugin/draft-js-plugins-purple-highlight.gif)
 
 
 ## Usage
