@@ -1,6 +1,6 @@
 {
   "name": "draft-js-highlight-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A draft js plugin for highlighting text, compatible with draft-js-plugins",
   "main": "index.js",
   "repository": "https://github.com/juliankrispel/getting-started-with-draft-js-plugins/tree/master/src/highlightPlugin",
