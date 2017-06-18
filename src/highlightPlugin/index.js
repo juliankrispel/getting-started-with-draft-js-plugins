@@ -1,13 +1,18 @@
 import  { RichUtils } from 'draft-js';
 
-export default () => {
+const defaultStyle = {
+  background: 'blue',
+  padding: '0 .3em',
+  color: '#fff',
+};
+
+export default (style = {}) => {
   return {
     customStyleMap: {
       'HIGHLIGHT': {
-        background: 'blue',
-        padding: '0 .3em',
-        color: '#fff',
-      }
+        ...defaultStyle,
+        ...style,
+      },
     },
     keyBindingFn: (e) => {
       if (e.metaKey && e.key === 'h') {

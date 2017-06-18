@@ -5,7 +5,9 @@ import createEmojiPlugin from 'draft-js-emoji-plugin';
 import createHighlightPlugin from './highlightPlugin';
 import 'draft-js-emoji-plugin/lib/plugin.css'
 
-const highlightPlugin = createHighlightPlugin();
+const highlightPlugin = createHighlightPlugin({
+  background: 'purple'
+});
 const emojiPlugin = createEmojiPlugin();
 const { EmojiSuggestions } = emojiPlugin;
 
